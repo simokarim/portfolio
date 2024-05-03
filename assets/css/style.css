@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: url("/assets/img/bg-masthead.jpg") center center no-repeat;
+  /* background: url("/assets/img/bg-masthead.jpg") center center no-repeat; */
   background-size: cover; /* Makes the background image cover the entire container */
   left: 0;
   right: 0;
