@@ -14,19 +14,19 @@ body {
   background-color: #040404;
   color: #fff;
   position: relative;
-  background: transparent;
 }
 
 body::before {
   content: "";
   position: fixed;
-  background: #000000  url("/assets/img/simoback.png") ;
-  background-size: cover;
+  background: url("/assets/img/bg-masthead.jpg") center center no-repeat;
+  background-size: cover; /* Makes the background image cover the entire container */
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -1190,9 +1190,9 @@ section .container {
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% { box-shadow: 0 0 0 rgba(163, 158, 158, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(163, 158, 158, 0.5); }
+  100% { box-shadow: 0 0 0 rgba(163, 158, 158, 0.5); }
 }
 
 .animate-pulse {
@@ -1205,4 +1205,21 @@ section .container {
   animation-fill-mode: none;
   animation-play-state: running;
   animation-name: pulse;
+}
+
+.Typewriter__cursor{
+  animation: Typewriter-cursor 1s infinite;
+  margin-left: 1px;
+}
+@keyframes Typewriter-cursor {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

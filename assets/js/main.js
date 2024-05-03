@@ -254,7 +254,7 @@
 })()
 
 let textLength = 0;
-let text = "Besoin d'un produit, d'une fonctionnalité ou d'un site Web ? Je suis là pour vous aider ! Parcourez mes projets et mon parcours professionnel. Si vous avez un projet en tête et besoin d'un développeur, contactez-moi sans hésiter.";
+let text = "Développeur Full Stack passionné | Master en Génie Logiciel | Disponible pour des projets freelance";
 
 function type() {
     let textChar = text.charAt(textLength++);
